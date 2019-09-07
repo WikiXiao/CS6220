@@ -13,16 +13,15 @@ import pickle
 np.random.seed(5)
 batch_size = 32
 num_classes = 10
-epochs = 100
-data_augmentation = True
+epochs = 50
 num_predictions = 20
 train_size = 40000
 val_size = 10000
-train_true_size = 700
-val_true_size = 300
+train_true_size = 7000
+val_true_size = 3000
 save_dir = os.path.join(os.getcwd(), 'saved_models')
-model_name = 'colorRich_model.h5'
-file_name ='colorRich.txt'
+model_name = 'colorRich_10x_model.h5'
+file_name ='colorRich_10x.txt'
 
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
 
