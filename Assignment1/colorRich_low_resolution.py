@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 import os
 import numpy as np
 import pickle
+import tensorflow as tf
+from keras.backend import tf as ktf
 
 np.random.seed(5)
 batch_size = 32
